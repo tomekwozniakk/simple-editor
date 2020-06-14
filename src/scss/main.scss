@@ -49,7 +49,9 @@ html {
   border: 1px solid black;
   min-width: 10%;
   border-radius: 8px;
-
+    &:hover {
+      font-weight: bold;;
+    }
 }
 
 .load {
