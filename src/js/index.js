@@ -11,6 +11,12 @@ const save = document.querySelector('.save--js');
 const load = document.querySelector('.load--js');
 const textArea = document.querySelector('.form__area--js');
 
+const currentValue = localStorage.getItem('entry');
+
+if(currentValue) {
+    document.querySelector('.info--js').innerHTML = 'ℹ️'
+}
+
 save.addEventListener('click', (e) => {
     e.preventDefault();
     localStorage.setItem('entry', textArea.value);
