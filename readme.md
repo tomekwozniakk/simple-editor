@@ -1,14 +1,14 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://tomekwozniakk.github.io/simple-editor/fb.png)
 
-# WTF Webpack Starter Kit 
+# My super-simple editor 
 
-Simple toolkit for your static websites development.
+Simple editor immune to page reloading. Created using [Webpack-starter](https://github.com/maciejkorsan/wtf-webpack-starter).
 
 ## How to use it?
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+Write your text, then if you wish to save it, click on SAVE button. If you wish to load previously saved text, just click on LOAD button (if previously saved content exists, it is shown on LOAD button by a little "i" icon).
 
-## Available scripts
+## Webpack-starter options:
 
 `npm run start` - runs development mode
 
