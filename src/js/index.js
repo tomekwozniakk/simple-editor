@@ -14,12 +14,17 @@ const textArea = document.querySelector('.form__area--js');
 const currentValue = localStorage.getItem('entry');
 
 if(currentValue) {
-    document.querySelector('.info--js').innerHTML = 'ℹ️'
+    document.querySelector('.info--js').innerHTML = 'ℹ️';
 }
 
 save.addEventListener('click', (e) => {
     e.preventDefault();
     localStorage.setItem('entry', textArea.value);
+    if(textArea.value) {
+        document.querySelector('.info--js').innerHTML = 'ℹ️';
+    } else {
+        document.querySelector('.info--js').innerHTML = '';
+    }
 } )
 
 load.addEventListener('click', (e) => {
